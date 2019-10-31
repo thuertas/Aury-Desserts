@@ -20,6 +20,8 @@ a {
 }
 
 /* ------------ HEADER ----------------*/
+/* from this point till the end of this file you'd be able to see different types of Combinators and Pseudo Classes*/
+/*No ID's were used for styling >> all the ID's were just used in HTML for navigation interactions*/
 .header {
     background-color: #FDF9E7;
     font-size: 17px;
@@ -31,6 +33,7 @@ a {
     z-index: 10; /*to make sure that the header is over all objects*/
 }
 
+/*when the Submit button is hovered over by the mouse*/
 .header a:hover {
     color: #809C9A;
 }
@@ -84,7 +87,7 @@ the mouse hovers over each anchor and while they are selected*/
 }
 
 .opening-section h1::first-letter, .second-section h1::first-letter, .third-section h1::first-letter {
-    text-transform: capitalize; /* to make sure that all the titles are capitalized*/
+    text-transform: capitalize; /* to make sure that all the FIRST letter of the titles are uppercase*/
 }
 
 .second-section img {
@@ -190,6 +193,7 @@ the mouse hovers over each anchor and while they are selected*/
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+/*when the Submit button is hovered over by the mouse*/
 .second-section input[type="submit" i]:hover {
     color: #ffffff;
 }
