@@ -1,0 +1,278 @@
+/* FONTS */
+.brand-font {
+    font-family: 'Pacifico', cursive;
+    color: #AE8D80;
+}
+
+.title-font {
+    font-family: 'Sacramento', cursive;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*BODY SETUP*/
+body {margin: 10px;}
+/*GLOBAL SETUP*/
+a {
+    text-decoration: none;
+}
+
+/* ------------ HEADER ----------------*/
+.header {
+    background-color: #FDF9E7;
+    font-size: 17px;
+    position: fixed; /*this is to make the header sticky */
+    top: 0;          /*to the top of the browser's window*/
+    width: 100%;
+    border-top: 2px solid #AE8D80;
+    border-bottom: 2px solid #AE8D80;
+    z-index: 10; /*to make sure that the header is over all objects*/
+}
+
+.header a:hover {
+    color: #809C9A;
+}
+
+.header img {
+    width: 30px;
+    vertical-align: middle; /*to align the text in the navigation bar*/
+    padding: 5px;
+    display: inline; /*to show it in the same line as the restauran's name*/
+}
+
+/* here's the navigation bar of the page giving space on the left for the logo*/
+.header .main-nav {
+    display: inline; /* same line as the logo */
+    padding-left: 16px;
+}
+
+.header .main-nav a {
+    color: #AE8D80;
+    text-align: center;
+    padding: 7px 16px 11px 16px;
+}
+
+/*the following is intentded to change the apperance of the nav options while 
+the mouse hovers over each anchor and while they are selected*/
+.header .main-nav a:hover, a:target { 
+    background-color: #C6A88F;
+    color: #809C9A;
+}
+
+.top-image {
+    width: 100%;
+}
+
+/*----------------------------- BODY -----------------------------*/
+/****************HOME PAGE*********************/
+.opening-section {
+    padding: 50px 15%;
+    text-align: center;
+}
+
+.second-section {
+    background-color: #FDF9E7;
+    text-align: left;
+    padding: 50px 15%;
+    height: auto; /*will fix the size of the content*/
+}
+
+.opening-section h1, .second-section h1, .third-section h1 {
+    text-align: center;
+}
+
+.opening-section h1::first-letter, .second-section h1::first-letter, .third-section h1::first-letter {
+    text-transform: capitalize; /* to make sure that all the titles are capitalized*/
+}
+
+.second-section img {
+    width: 220px;
+    float: right; /*to place the image on the right*/
+    margin-left: 15px;
+}
+
+
+.third-section {
+    text-align: right;
+    padding: 50px 15%;
+}
+
+.third-section img {
+    width: 250px;
+    float: left; /*to place the image on the left*/
+    margin-left: 15px;
+}
+
+/****************MENU PAGE*********************/
+.second-section small {
+    padding-left: 40px;
+}
+
+/*.opening-section + .menu, .menu + .menu, .menu + .third-section {
+    height: 300px;
+}*/
+
+/****************DRINKS PAGE*********************/
+.drinks-row {
+    width: 100%;
+}
+
+/*to create a table look so that the body of the drinks page can have two columns*/
+.drinks-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*to create a colum base for the two sides of the drinks page*/
+.drinks-column {
+    float: left; /*to place the column on the left*/
+    width: 49%;
+    padding: 16px 5px;
+}
+
+/*this one overwrites the img style set in 
+'.second-section img' and '.third-section img' for the Home page*/
+.second-section .container img, .third-section .container img {
+    width: 100%;
+    float: none;
+    margin-left: 0;
+}
+
+.drinks-row .second-section > p, .drinks-row .third-section > p {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.drinks-row .second-section p small, .drinks-row .third-section p small {
+    text-transform: lowercase;
+    padding-left: 0;
+}
+
+.container {
+    position: relative; /*this is intended to show the text over the image*/
+    text-align: center;
+}
+
+/*to show the text over the image*/
+.container h1 {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+.drinks-row + .opening-section img {
+    width: 50%;
+}
+
+/****************CONTACT PAGE*********************/
+.opening-section h1 + img {
+    width: 300px;
+}
+
+.second-section iframe {
+    width: 80%; 
+    height: 450px; 
+    border:0;
+}
+
+.center-content {
+    text-align: center;
+}
+
+/*decoration for the submit button*/
+.second-section input[type="submit" i] {
+    background-color: #809C9A;
+    padding: 7px 16px;
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.second-section input[type="submit" i]:hover {
+    color: #ffffff;
+}
+
+/*----------------------------- FOOTER -----------------------------*/
+.footer {
+    width: 100%;
+    background-color: #809C9A;
+    color: #ffffff;
+}
+
+/*to create a table look so that the footer can have three columns*/
+.footer:after { 
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*to create a colum base for the three parts of the footer*/
+.column {
+    float: left; /*to place the image on the left*/
+    width: 30%;
+    padding: 16px 10px;
+}
+
+.footer .column > h1 {
+    padding-left: 40px;
+}
+
+.footer ul {
+    list-style-type: none;
+    font-size: 17px;
+}
+
+.footer ul li > a {
+    color: #ffffff;
+}
+
+.footer .social-media > li {
+    display: inline; /*to show the media icons in one line*/
+}
+
+.footer .social-media a > img {
+    width: 40px;
+    padding: 0 5px;
+}
+
+.footer .social-media li:first-child { /*This is only for the first li in social-media*/
+    padding-left: 40px;
+}
+
+.footer .margin-qta-bottom {
+    margin-bottom: 15px;
+}
+
+.footer .margin-qta-bottom img {
+    vertical-align: middle;
+    width: 40px;
+    margin-right: 2px;
+}
+
+.copyright {
+    width: 100%;
+    background-color: #809C9A;
+    text-align: center;
+    border-top: 1px dashed #5D7473;
+    color: #5D7473;
+    padding: 5px 0;
+}
+
+.copyright p {
+    margin: 5px 0 0 0;
+}
+
+.footer table {
+    padding-left: 40px;
+    width: 80%;
+}
+
+.footer table td {
+    border-bottom: 1px dashed #5D7473;
+}
+
+.footer table td + td {
+    width: 85px;
+}
